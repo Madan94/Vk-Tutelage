@@ -1179,6 +1179,10 @@ section,
   .hero .hero-content h1 span{
     position: relative;
   }
+
+  .hero .hero-content p{
+    padding-top:25px;
+  }
   
   .hero .hero-content h1 span::before{
     content:" at Your Fingertips.";
@@ -1409,8 +1413,8 @@ section,
 @media (max-width: 575px) {
 
   .stats-row{
-    width:450px;
-    margin:15px;
+    width:380px;
+    margin-left:50px;
     top:10px;
   }
 
