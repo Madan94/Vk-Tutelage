@@ -1181,7 +1181,7 @@ section,
   }
 
   .hero .hero-content p{
-    padding-top:25px;
+    padding-top:35px;
   }
   
   .hero .hero-content h1 span::before{
@@ -1410,11 +1410,17 @@ section,
   margin: 0;
 }
 
+.header-row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (max-width: 575px) {
 
   .stats-row{
     width:380px;
-    margin-left:50px;
+    align-self:center;
     top:10px;
   }
 
