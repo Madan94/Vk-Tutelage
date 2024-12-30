@@ -560,10 +560,10 @@ form .hidden {
   text-decoration: none;
   background-color: #25d366;  
   border:1px solid #25d366;
-  border-radius: 20px; 
+  border-radius: 25px; 
   font-family: 'Poppins', sans-serif; 
   height:45px;
-  width:150px;
+  width:165px;
 }
 
 .whatsapp-link a{
@@ -580,6 +580,40 @@ form .hidden {
 
 .whatsapp-icon{
   margin-right:5px;
+  margin-left:5px;
+}
+
+@media all and (max-width:1280px){
+  .whatsapp-link {
+    display: flex;
+    align-items: center;
+    color: white; 
+    text-decoration: none;
+    background-color: #25d366;  
+    border:1px solid #25d366;
+    border-radius: 25px; 
+    font-family: 'Poppins', sans-serif; 
+    height:45px;
+    width:165px;
+    margin-left:15px;
+  }
+
+  .whatsapp-link a{
+    color:#fff;
+    font-weight: 600;
+  }
+  
+  .whatsapp-link:hover{
+    background-color: #fff;
+    border:1px solid #25d366;
+    color:#25d366;
+    transition: 0.3s;
+  }
+  
+  .whatsapp-icon{
+    margin-right:5px;
+    margin-left:5px;
+  }
 }
 
 .main-text{
@@ -590,22 +624,52 @@ form .hidden {
 }
 
 .head-text{
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 600;
   font-family: "Poppins", serif;
   font-style: normal;
   color:#fff;
 }
 
-/* Text - Mobile View */
-
-@media(max-width:768px){
-  .main-text{
-    font-size:150px;
-    font-weight:500;
-  }
+.usp-list{
+  text-align: left;
+  font-size: 20px;
 }
 
+.custom-accordion {
+  background-color: #f8f9fa;
+  color: #333;
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.custom-accordion:not(.collapsed) {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.accordion-item {
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.accordion-body {
+  background-color: #ffffff;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(0,0,0,.125);
+}
+
+.accordion-button::after {
+  transition: transform 0.3s ease;
+}
 
 /* Navmenu - Mobile */
 @media (max-width: 1199px) {
@@ -1173,7 +1237,7 @@ section,
 
 @media (max-width: 575px) {
   .hero .hero-content h1 {
-    font-size: 45px;
+    font-size: 30px;
   }
 
   .hero .hero-content h1 span{

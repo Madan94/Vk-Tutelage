@@ -34,9 +34,8 @@
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo.png" alt=""> 
-        <h1 class="sitename" style="font-weight:800;">GENIUS TUTE</h1>
+        <img src="assets/img/logo.png" alt="" style="max-width: clamp(40px, 8vw, 120px);"> 
+        <h1 class="sitename" style="font-weight:800; font-size: clamp(1rem, 4vw, 1.5rem); margin-left: 0.5rem;">GENIUS TUTE</h1>
       </a>
       <nav id="navmenu" class="navmenu">
         <ul>
@@ -46,10 +45,10 @@
           <li><a href="#team">Team</a></li>
           <li><a href="#contact">Contact</a></li>
           <li class="whatsapp-link">
-            <a href="https://wa.me/+918925579574" target="_blank">
+            <a href="https://wa.me/+918925579574" target="_blank" rel="noopener" class="d-flex align-items-center whatsapp-btn">
               <img src="./assets/img/whatsapp.png" alt="WhatsApp" height="30" width="30" class="whatsapp-icon">
-              WhatsApp
-            </a>            
+              <span class="whatsapp-text">WhatsApp</span>
+            </a>
           </li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -67,10 +66,17 @@
           <div class="col-lg-6">
             <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
               <div class="company-badge mb-4">
-                <i class="bi bi-gear-fill me-2"></i>
-                Working for your success
+                <i class="bi bi-gear-fill me-2" style="color:#fff;"></i>
+                <span style="color:#fff;">Working for your success</span>
               </div>
-    
+              <style>
+                @media (max-width: 768px) {
+                  .main-text {
+                    font-size: 45px;
+                    line-height: 1.2;
+                  }
+                }
+              </style>
               <h1 class="mb-4 text-white main-text">
                 Pre Loved Books & 
                  <br>Hand Written Notes <br><span style="color:yellow;"></span>
@@ -93,6 +99,44 @@
             </div>
           </div>
         </div>
+        <style>
+          @media (max-width: 768px) {
+            .header-row {
+              padding: 0 10px;
+              margin-top: 10px;
+            }
+            
+            .stats-row {
+              margin: 0 !important;
+            }
+
+            .stat-item {
+              
+              min-height: 5px;
+              margin-top: 5px;
+            }
+
+            .stat-content h4 {
+              font-size: 16px;
+              margin-bottom: 4px;
+            }
+
+            .stat-content p {
+              font-size: 12px;
+              line-height: 1.2;
+              margin-bottom: 0;
+            }
+
+            .stat-icon {
+              margin-bottom: 5px;
+              font-size: 20px;
+            }
+
+            .stat-icon i {
+              font-size: 20px;
+            }
+          }
+        </style>
         <div class="header-row">
           <div class="row stats-row gy-4 mt-5" data-aos="fade-up" data-aos-delay="500">
             <div class="col-lg-3 col-md-6">
@@ -163,6 +207,7 @@
                   <li><i class="bi bi-check-circle-fill"></i> Guide books</li>
                   <li><i class="bi bi-check-circle-fill"></i> Previous years question papers</li>
                   <li><i class="bi bi-check-circle-fill"></i> Hand written notes</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Avail Classes</li>
                 </ul>
               </div>
   
@@ -197,9 +242,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Products</h2>
-        <p>We are taking forward step in educational sector by providing Materials      
-          & Guide Books through our e-commerce platform, in addition students can avail classes through our 
-          platform. Services for students like schooling, Engineering, Arts (Life science course) & also diploma.
+        <p>Our tailored solutions empower students across schools, colleges, and diploma courses with curated notes, comprehensive guides, and seamless access to expert-led classes. Learn smarter, excel faster!
         </p>
       </div><!-- End Section Title -->
 
@@ -238,13 +281,12 @@
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
                 <h3>GENIUS TUTE</h3>
                 <p class="fst-italic">
-                  We are taking forward step in educational sector by providing Materials         
-                  & Guide Books through our e-commerce platform, in addition students can avail classes through our platform
-                  for school students
+                  Unlock your academic potential with detailed notes, simplified guides, and interactive classes designed specifically for school students. Learn concepts effortlessly and stay ahead in your journey.
                 </p>
                 <ul>
-                  <li><i class="bi bi-check2-all"></i> <span>GuideBooks</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>SchoolBooks</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Guide Books</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>School Books</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Avail Classes</span></li>
                 </ul>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
@@ -258,14 +300,13 @@
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
                 <h3>GENIUS TUTE</h3>
                 <p class="fst-italic">
-                  We are taking forward step in educational sector by providing Materials         
-                  & Guide Books through our e-commerce platform, in addition students can avail classes through our platform
-                  for college Students
+                  Enhance your college learning experience with advanced notes, subject-focused guides, and on-demand classes that bridge the gap between classroom theory and practical knowledge
                 </p>
                 <ul>
                   <li><i class="bi bi-check2-all"></i> <span>Handwritten Notes</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>GuideBooks</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Guide Books</span></li>
                   <li><i class="bi bi-check2-all"></i> <span>Previous year question papers</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Avail Classes</span></li>
                 </ul>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
@@ -279,13 +320,12 @@
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
                 <h3>GENIUS TUTE</h3>
                 <p class="fst-italic">
-                  We are taking forward step in educational sector by providing Materials         
-                   & Guide Books through our e-commerce platform, in addition students can avail classes through our platform
-                   for Diploma Students.
+                  Boost your skills with industry-relevant notes, practical guides, and specialized classes for diploma courses, helping you master your craft and excel in your career.
                 </p>
                 <ul>
-                  <li><i class="bi bi-check2-all"></i> <span>GuideBooks</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Guide Books</span></li>
                   <li><i class="bi bi-check2-all"></i> <span>Handwritten Notes</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Avail Classes</span></li>
                 </ul>
                
               </div>
@@ -306,19 +346,217 @@
 
     <!-- Call To Action Section -->
     <section id="call-to-action" class="call-to-action section">
+      <style>
+        .usp-list{
+          line-height: 2;
+        }
+        @media (max-width: 768px) {
+          #call-to-action {
+            padding: 40px 0;
+            margin: 20px 0;
+          }
+          .usp-list {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-top: 15px;
+            padding-left: 20px;
+          }
+          .usp-list li {
+            margin-bottom: 12px;
+          }
+          .head-text {
+            font-size: 28px;
+            margin-bottom: 15px;
+          }
+          .head-text span {
+            font-size: 20px;
+          }
+        }
+        @media (max-width: 480px) {
+          #call-to-action {
+            padding: 30px 0;
+            margin: 15px 0;
+          }
+          .usp-list {
+            font-size: 14px;
+            line-height: 1.5;
+            margin-top: 10px;
+            padding-left: 15px;
+          }
+          .usp-list li {
+            margin-bottom: 10px;
+          }
+          .head-text {
+            font-size: 24px;
+            margin-bottom: 10px;
+          }
+          .head-text span {
+            font-size: 18px;
+          }
+        }
+      </style>
+
+
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row content justify-content-center align-items-center position-relative">
           <div class="col-lg-8 mx-auto text-center">
-            <h2 class="display-4 mb-4 head-text" style="color:#fff;">GENIUS TUTE <br>
+            <h2 class="display-4 mb-4 head-text" style="color:#fff;">GENIUS TUTE - USP<br>
               <span style="color:yellow;">"An Innovation in Education Sector as E-Commerce Platform"</span></h2>
+              <ol class="usp-list">
+                <li>To solve this issue, We are providing notes and guidebooks [Refurbished].</li>
+                <li>We are offering courses related to their syllabus.</li>
+                <li>We are providing these resources in an affordable and organized manner to students.</li>
+                <li>Students can access our platform from all over Tamil Nadu. Most students from tier-2, 3 cities will benefit.</li>
+              </ol>
           </div>
-        
       </div>
 
     </section><!-- /Call To Action Section -->
 
+    <!-- Review Analysis Section -->
+    <section id="review-analysis" class="section">
+      <div class="container" data-aos="fade-up">
+        <!-- Section Title -->
+        <div class="section-title">
+          <h2>Market Analysis</h2>
+          <p>Understanding the Educational Landscape</p>
+        </div>
+        <style>
+          @media (max-width: 768px) {
+            .analysis-item {
+              margin: 0;
+              padding: 10px !important;
+            }
+            
+            .analysis-item img {
+              height: auto !important; /* Allow image to scale naturally */
+              width: 100%;
+              object-fit: contain;
+            }
+            
+            .col-lg-5 {
+              padding: 0 15px;
+              margin: 0 0 20px 0 !important;
+            }
+            
+            .analysis-container .row {
+              margin: 0;
+              width: 100%;
+            }
+
+            .analysis-container .mx-3 {
+              margin-left: 0 !important;
+              margin-right: 0 !important;
+            }
+          }
+        </style>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <div class="analysis-container" data-aos="fade-up" data-aos-delay="100">
+              <div class="row justify-content-center">
+                <!-- Analysis Image 1 -->
+                <div class="col-lg-5 col-md-6 mb-4">
+                  <div class="analysis-item">
+                    <h4 class="text-center mb-4" style="color: var(--accent-color); font-family: 'Poppins', sans-serif;">Student Accessibility Analysis</h4>
+                    <div class="image-container">
+                      <img src="assets/img/mr1.jpg" alt="Student Accessibility Analysis" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Analysis Image 2 -->
+                <div class="col-lg-5 col-md-6 mb-4">
+                  <div class="analysis-item">
+                    <h4 class="text-center mb-4" style="color: var(--accent-color); font-family: 'Poppins', sans-serif;">Resource Distribution Statistics</h4>
+                    <div class="image-container">
+                      <img src="assets/img/mr2.jpg" alt="Resource Distribution Statistics" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <style>
+              .analysis-item {
+                padding: 15px;
+                margin: 10px;
+              }
+              
+              .image-container {
+                margin: 0 auto;
+                max-width: 100%;
+              }
+
+              .image-container img {
+                width: 100%;
+                height: auto;
+                border-radius: 15px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+              }
+
+              @media (max-width: 768px) {
+                .analysis-item {
+                  padding: 10px;
+                  margin: 5px;
+                }
+                
+                .image-container {
+                  width: 100%;
+                }
+
+                .image-container img {
+                  max-height: none;
+                  object-fit: contain;
+                }
+              }
+            </style>
+          </div>
+          <!-- Feedback Section -->
+          <div class="row justify-content-center mt-5">
+            <div class="col-lg-10">
+              <div class="feedback-container p-4" data-aos="fade-up" data-aos-delay="200" style="background-color: #f8f9fa; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <h4 class="text-center mb-4" style="color: var(--accent-color); font-family: 'Poppins', sans-serif;">Feedbacks from Potential Users on Current Market</h4>
+                
+                <div class="feedback-grid">
+                  <!-- Feedback 1 -->
+                  <div class="feedback-item p-4 mb-3" style="background: white; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); transition: all 0.3s ease; cursor: pointer;" 
+                       onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 15px rgba(0,0,0,0.1)'" 
+                       onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.05)'">
+                    <div class="feedback-content" style="font-family: 'Poppins', sans-serif; color: #444;">
+                      <i class="bi bi-quote" style="font-size: 1.5rem; color: var(--accent-color); transition: color 0.3s ease;"></i>
+                      <p class="mb-0 mt-2">Studies is always important thing at the same time it's material and guids ,notes is most necessary. So the material should be easy to understand and useful material wants to be prefer for upcoming session.</p>
+                    </div>
+                  </div>
+
+                  <!-- Feedback 2 -->
+                  <div class="feedback-item p-4 mb-3" style="background: white; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); transition: all 0.3s ease; cursor: pointer;"
+                       onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 15px rgba(0,0,0,0.1)'" 
+                       onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.05)'">
+                    <div class="feedback-content" style="font-family: 'Poppins', sans-serif; color: #444;">
+                      <i class="bi bi-quote" style="font-size: 1.5rem; color: var(--accent-color); transition: color 0.3s ease;"></i>
+                      <p class="mb-0 mt-2">The availability of notes and guidebooks is a significant challenge for students, affecting their ability to study efficiently. Many of the current websites and apps that provide these materials have several issues,
+                        including intrusive advertisements, and the requirement to download additional apps.</p>
+                    </div>
+                  </div>
+
+                  <!-- Feedback 3 -->
+                  <div class="feedback-item p-4 mb-3" style="background: white; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); transition: all 0.3s ease; cursor: pointer;"
+                       onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 15px rgba(0,0,0,0.1)'" 
+                       onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.05)'">
+                    <div class="feedback-content" style="font-family: 'Poppins', sans-serif; color: #444;">
+                      <i class="bi bi-quote" style="font-size: 1.5rem; color: var(--accent-color); transition: color 0.3s ease;"></i>
+                      <p class="mb-0 mt-2">Need some changes with standard notes for students. Sometimes it is hard to find the notes.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      <!-- Review Analysis Section End-->
+      </div>
+    </section>
 
     <!-- Testimonials Section -->
     <section id="team" class="testimonials section light-background">
@@ -330,9 +568,7 @@
       </div><!-- End Section Title -->
 
       <div class="container">
-
         <div class="row g-5">
-
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="testimonial-item">
               <img src="assets/img/Founder.jpg" class="testimonial-img" alt="">
@@ -340,12 +576,11 @@
               <h4>Founder &amp; CEO</h4>
               <p>
                 <i class="bi bi-quote quote-icon-left"></i>
-                <span>Simple notes, big learning</span>
+                <span>Education is the spark that lights up a mind</span>
                 <i class="bi bi-quote quote-icon-right"></i>
               </p>
             </div>
           </div><!-- End testimonial item -->
-
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <div class="testimonial-item">
               <img src="assets/img/direc.jpg" class="testimonial-img" alt="">
@@ -358,13 +593,24 @@
               </p>
             </div>
           </div><!-- End testimonial item -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="testimonial-item">
+              <img src="assets/img/Profile1.jpg" class="testimonial-img" alt="">
+              <h3>Madhanraj M</h3>
+              <h4>Technical Assist</h4>
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                <span>Empowering education with tech, turning potential into possibilities.</span>
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
+            </div>
+          </div><!-- End testimonial item -->
         </div>
-      </div>
+
     </section><!-- /Testimonials Section -->
 
     <!-- Stats Section -->
-   
-
+  
     <!-- Faq Section -->
     <section class="faq-9 faq section light-background" id="faq">
 
@@ -548,6 +794,7 @@
           <a href="index.html" class="logo d-flex align-items-center">
             <span class="sitename">Genius Tute</span>
           </a>
+            <p>Vk Tutelage Pvt Ltd</p>
           <div class="footer-contact pt-3">
             <p>CITIL, Chennai institute of technology, kundrathur,</p>
             <p>Chennai 600069, Tamilnadu, India</p>
@@ -566,11 +813,11 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#features">Products</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact Us</a></li>
           </ul>
         </div>
 
